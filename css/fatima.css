@@ -436,6 +436,7 @@ div > a.phone-cta-btn {
   text-align: center;       
   color: #fff;              /* white text */
   border: none;
+  z-index: 5;
 }
 
 
@@ -1346,6 +1347,7 @@ div > a.phone-cta-btn {
   background-image: url('../images/ad_sm.webp');
   }
 }
+
 
 
 
