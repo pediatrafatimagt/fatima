@@ -422,12 +422,11 @@ div > a.btn:hover {
 -----------------------------------------*/
 div > a.phone-cta-btn {
   position: absolute;
-  bottom: 0.5rem;   /* adjust spacing */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 50%);
+  left: 30%;
+  top: 60%;
   text-align: center;       
   color: #fff;              /* white text */
+  border: none;
 }
 
 
@@ -1338,6 +1337,7 @@ div > a.phone-cta-btn {
   background-image: url('../images/ad_sm.webp');
   }
 }
+
 
 
 
