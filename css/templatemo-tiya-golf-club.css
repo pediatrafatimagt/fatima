@@ -704,7 +704,16 @@ div > a.btn:hover {
   position: relative;
   z-index: 22;
 }
-
+div > a  .phone-cta-btn {
+    width: 50%;              /* half the screen */
+    font-size: 1.75rem;       /* same as fs-3 */
+    padding: 1rem;            /* extra tappable */
+    text-align: center;       
+    color: #fff;              /* white text */
+    border-radius: .5rem;     /* rectangular with slightly rounded corners */
+    display: block;
+    margin: 0 auto;           /* center horizontally */
+  }
 
 /*---------------------------------------
   BACKGROUND IMAGE SECTION        
@@ -1325,4 +1334,5 @@ div > a.btn:hover {
   background-image: url('../images/ad_sm.webp');
   }
 }
+
 
