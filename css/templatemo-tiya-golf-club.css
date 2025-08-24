@@ -421,13 +421,13 @@ div > a.btn:hover {
        ADDED PHONE BUTTON 
 -----------------------------------------*/
 div > a.phone-cta-btn {
-    width: 50%;              /* half the screen */
+    width: 80%;              /* half the screen */
     font-size: 1.75rem;       /* same as fs-3 */
     padding: 1rem;            /* extra tappable */
     text-align: center;       
     color: #fff;              /* white text */
-    border-radius: .5rem;     /* rectangular with slightly rounded corners */
-    display: block;
+   /*  border-radius: .5rem;     rectangular with slightly rounded corners 
+    display: block;*/
     margin: 0 auto;           /* center horizontally */
 }
 
@@ -1339,6 +1339,7 @@ div > a.phone-cta-btn {
   background-image: url('../images/ad_sm.webp');
   }
 }
+
 
 
 
