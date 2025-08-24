@@ -425,9 +425,9 @@ div > a.phone-cta-btn {
   bottom: 0.5rem;   /* adjust spacing */
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   font-size: 1rem;       /* same as fs-3 */
-  padding: 0;            /* extra tappable */
+  padding: 5;            /* extra tappable */
   text-align: center;       
   color: #fff;              /* white text */
 }
@@ -1340,6 +1340,7 @@ div > a.phone-cta-btn {
   background-image: url('../images/ad_sm.webp');
   }
 }
+
 
 
 
