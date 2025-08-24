@@ -422,10 +422,10 @@ div > a.btn:hover {
 -----------------------------------------*/
 div > a.phone-cta-btn {
     font-size: .75rem;       /* same as fs-3 */
-    padding: 1rem;            /* extra tappable */
+    padding: 0;            /* extra tappable */
     text-align: center;       
     color: #fff;              /* white text */
-    margin: 0 15 0 0;           /* center horizontally */
+    margin: 15px 0 0 0;           /* center horizontally */
 }
 
 
@@ -1336,6 +1336,7 @@ div > a.phone-cta-btn {
   background-image: url('../images/ad_sm.webp');
   }
 }
+
 
 
 
