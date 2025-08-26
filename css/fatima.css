@@ -138,21 +138,6 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-/*---------------------------------------
-  202508 CUSTOMIZATION               
------------------------------------------*/
-
-/* Apply the transition to the button links */
-.btn {
-  /* This ensures the scaling is a smooth animation */
-  transition: transform 0.3s ease;
-}
-
-/* Define the hover state for the buttons */
-div > a.btn:hover {
-  /* This scales the button up by 10% */
-  transform: scale(1.1);
-}
 
 /*---------------------------------------
   SECTION               
@@ -426,6 +411,24 @@ div > a.btn:hover {
   color: var(--link-hover-color);
 }
 
+
+/*---------------------------------------
+  202508 CUSTOMIZATION               
+-----------------------------------------*/
+
+/* Apply the transition to the button links */
+.btn {
+  /* This ensures the scaling is a smooth animation */
+  transition: transform 0.3s ease;
+}
+
+/* Define the hover state for the buttons */
+div > a.btn:hover {
+  /* This scales the button up by 10% */
+  transform: scale(1.1);
+}
+
+
 /*----------------------------------
        ADDED PHONE BUTTON 
 -----------------------------------------*/
@@ -437,6 +440,13 @@ div > a.phone-cta-btn {
   color: #fff;              /* white text */
   border: none;
   z-index: 5;
+}
+
+/*----------------------------------
+      Map Iframe 
+-----------------------------------------*/
+#map_iframe {
+  width: 100%;
 }
 
 
