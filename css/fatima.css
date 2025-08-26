@@ -523,6 +523,9 @@ div > a.phone-cta-btn {
   margin-left: 10px;
   position: relative;
   bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .navbar-brand-text small {
@@ -530,6 +533,17 @@ div > a.phone-cta-btn {
   font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 900;
+}
+
+.navbar-brand-text br {
+  display: block;
+  font-size: 5px;
+  line-height: .7;
+  text-transform: uppercase;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 600;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
