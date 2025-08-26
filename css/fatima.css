@@ -428,6 +428,25 @@ div > a.btn:hover {
   transform: scale(1.1);
 }
 
+.header_tag_line {
+  display: block;
+  font-size: 10px;
+  line-height: .7;
+  text-transform: uppercase;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 600;
+}
+
+  .clinica_ped {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.fatima_brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
 
 /*----------------------------------
        ADDED PHONE BUTTON 
@@ -537,14 +556,6 @@ div > a.phone-cta-btn {
   font-weight: 900;
 }
 
-.navbar-brand-text br {
-  display: block;
-  font-size: 5px;
-  line-height: .7;
-  text-transform: uppercase;
-  font-family: 'Roboto Flex', sans-serif;
-  font-weight: 600;
-}
 
 .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: var(--border-radius-large);
