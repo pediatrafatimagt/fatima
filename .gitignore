@@ -1,0 +1,18 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# VS Code & extensions
+.vscode/
+.qodo/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node.js (if used later)
+node_modules/
+
+# Logs
+*.log

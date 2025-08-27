@@ -1,0 +1,17 @@
+[
+  {
+    "loc": "https://myguate.net/",
+    "changefreq": "monthly",
+    "priority": "1.0"
+  },
+  {
+    "loc": "https://myguate.net/event-listing.html",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
+    "loc": "https://myguate.net/event-detail.html",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  }
+]
