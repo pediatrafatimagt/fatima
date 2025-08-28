@@ -3,7 +3,10 @@ name: Generate Sitemap
 on:
   push:
     branches:
-      - main  # or your default branch (check if your repo uses 'main' or 'master')
+      - main  # change if your default branch is "master"
+
+permissions:
+  contents: write   # 👈 allow pushing commits
 
 jobs:
   build:
@@ -27,4 +30,6 @@ jobs:
           git add sitemap.xml
           git commit -m "Auto-update sitemap" || echo "No changes to commit"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
