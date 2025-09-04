@@ -180,9 +180,9 @@
 
                         <div class="col-lg-6 col-12">
 
-                            <h1 class="text-white mb-4 pb-2">Lista de Eventos</h1>
+                            <h1 class="text-white mb-4 pb-2">Planifica Tu Visita</h1>
 
-                            <a href="#section_3" class="btn custom-btn smoothscroll me-3">Explore Eventos</a>
+                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">Ayuda</a>
                         </div>
 
                     </div>
@@ -193,56 +193,219 @@
 
             <!--Visit details -->
             <section class="events-section section-padding" id="section_2">
-            <div class="container">
-                <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="card custom-block-info">
+                            <div class="card-header text-center">
+                                <h1 class="card-title">Preguntas Frecuentes</h1>
+                                <h3 class="lead">Respuestas a las preguntas más comunes sobre su visita.</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="accordion" id="faqAccordion">
 
-                    <div class="col-lg-12 col-12">
-                        <h2 class="mb-lg-5 mb-4">Tu Visita</h2>
-                    </div>
+                                    <!-- Pregunta 1 ¿Qué debo traer a mi cita?-->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="custom-block-info" id="headingOne">
+                                            <button class="accordion-button events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            ¿Qué debo traer a mi cita?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                <p>Debe traer:</p>
+                                                <ul>
+                                                    <li>Su documento de identidad</li>
+                                                    <li>Su tarjeta de seguro médico (si aplica)</li>
+                                                    <li>Cualquier documento de identidad del niño</li>
+                                                    <li>Tarjeta de vacunación</li>
+                                                    <li>Informes o exámenes médicos previos</li>
+                                                    <li>Lista de medicamentos que esté tomando actualmente</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!--item-->
 
-                    <!-- Preguntas Frecuentes -->
-                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <div class="custom-block-info">
-                            <a href="event-detail.html" class="events-title mb-2">Cuiados de Bebé</a>
-                            <p class="mb-0">Cuidadso del niño sano, prevención de la enfermedad y atención óptima del niño enfermo</p>
-                        </div>
-                    </div>
+                                    <!-- Pregunta 2 Puedo pagar con tarjeta -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            ¿Puedo pagar con tarjeta de crédito?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                            Sí, aceptamos varias formas de pago, incluyendo tarjetas de crédito (Visa, Mastercard, American Express), débito y efectivo. Por favor, consulte con nuestro personal sobre opciones de pago específicas.
+                                            </div>
+                                        </div>
+                                    </div> <!--item-->
 
-                    <!-- Qué Traer -->
-                    <div class="col-lg-6 col-12">
-                        <div class="custom-block-info">
-                            <a href="event-detail.html" class="events-title mb-2">Alimentación del Recien Nacido</a>
-                            <p class="mb-0">Detalles de la mejor forma de alimentar al recien nacido, beneficios de la lactancia materna para el bebé y para la madre</p>
-                        </div>
-                    </div>
+                                    <!-- Pregunta 3 horario de atención -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            ¿Cuál es el horario de atención?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                            Nuestro horario de atención es de lunes a sábado de 8:00 AM a 5:00 PM y estaremos cerrados los domingos.
+                                            </div>
+                                        </div>
+                                    </div> <!-- item -->
 
-                    <!-- Opciones de Pago -->
-                    <div class="col-lg-6 col-12">
-                        <div class="custom-block-info">
-                            <a href="event-detail.html" class="events-title mb-2">Alimentación del Recien Nacido</a>
-                            <p class="mb-0">Detalles de la mejor forma de alimentar al recien nacido, beneficios de la lactancia materna para el bebé y para la madre</p>
-                        </div>
-                    </div>
+                                    <!-- Pregunta 4 ¿Necesito una cita para ser atendido? -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            ¿Necesito una cita para ser atendido?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                <p>Sí, para asegurar una atención eficiente y minimizar su tiempo de espera, se requiere una cita previa. Puede agendarla con un mensaje por WhatsApp o llamando a nuestra oficina al teléfono 4183-5663.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- item -->
+                                                <!-- ¿Cuál es el precio de la consulta? Pregunta 5 -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            ¿Cuál es el precio de la consulta?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                                                    
+                                                <p><strong>Honorarios:</strong></p>
+                                                <ul>
+                                                <li>Q400 Primera consulta en horario normal</li>
+                                                <li>Q300 consulta Recurrente en horario normal</li>
+                                                <li>Q600 por consultas fuera de horario en clínica o en hospital</li>
+                                                <li>Q650 por evaluación hospitalaria</li>
+                                                </ul>
+                                                <p>Sabemos que la salud de los niños no debe depender únicamente de la economía familiar. 
+                                                Si existe alguna dificultad, puede comentarlo durante la consulta y lo tomaremos en cuenta.</p>
+                                                <p>Además, ofrecemos <a href="https://myguate.net/#section_3">planes de membresía anual</a> que reducen significativamente los costos y brindan beneficios como telemedicina, consejería nutricional y control de enfermedades crónicas.</p>
+                                                <p><strong>Promoción Septiembre 2025:</strong> Q100 por consulta en horario de lunes a sábado, de 8:00 a.m. a 5:00 p.m.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- item -->
+                                    
+                                    <!-- Pregunta 6 control de niño sano -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            ¿Qué incluye el control de niño sano?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                <p>El control de niño sano es una revisión integral que busca asegurar el desarrollo óptimo de su hijo. Incluye:</p>
+                                                <ul>
+                                                <li>Revisión médica completa por el pediatra</li>
+                                                <li>Evaluación de crecimiento y desarrollo</li>
+                                                <li>Consejería nutricional</li>
+                                                <li>Recomendaciones de vacunación y prevención</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- item -->
 
-                    <!--    Cómo Llegar -->
-                    <div class="col-lg-6 col-12">
-                        <div class="custom-block-info">
-                            <a href="event-detail.html" class="events-title mb-2">Alimentación del Recien Nacido</a>
-                            <p class="mb-0">Detalles de la mejor forma de alimentar al recien nacido, beneficios de la lactancia materna para el bebé y para la madre</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Horario de Atención -->
-                    <div class="col-lg-6 col-12">
-                        <div class="custom-block-info">
-                            <a href="event-detail.html" class="events-title mb-2">Alimentación del Recien Nacido</a>
-                            <p class="mb-0">Detalles de la mejor forma de alimentar al recien nacido, beneficios de la lactancia materna para el bebé y para la madre</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <!-- Pregunta 7 telemedicina -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            ¿Qué incluye la telemedicina?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                            <p>La telemedicina implica que el pediatra presenta el caso particular de su hijo, ya sea por teléfono o teleconferencia, a superespecialistas. Esto sucede solo cuando sea necesario. Se trata de especialidades como:  </p>             
+                                                <ul>
+                                                <li>Genética</li>
+                                                <li>Endocrinología</li>
+                                                <li>Enfermedades metabólicas</li>
+                                                <li>Condiciones poco frecuentes</li>
+                                                </ul>
+                                                <p>De esta manera, podemos diseñar para su hijo un <strong>plan de tratamiento personalizado</strong> según sus necesidades específicas.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </div><!-- item -->
+                                    <!-- Pregunta 8 membresía -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                            ¿Qué incluye la membresía?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                            <p>Solo incluyen los honorarios del pediatra y no los medicamentos.</p>
+                                            
+                                            <p>Nuestros planes de membresía anual ayudan a las familias a ahorrar y a mantener un seguimiento continuo. 
+                                            Entre sus beneficios están:</p>
+                                            <ul>
+                                            <li>Consultas pediátricas incluidas</li>
+                                            <li>Acceso a telemedicina</li>
+                                            <li>Consejería nutricional</li>
+                                            <li>Control de enfermedades crónicas</li>
+                                            <li>Otros beneficios según el plan seleccionado</li>
+                                            </ul>
+                                            <p>Puede ver todos los detalles en nuestra página: 
+                                            <a href="index.html/#section_3">Planes de membresía</a>.</p>        
+
+                                        </div>
+                                        </div>
+                                    </div><!-- item -->
+                                                                        
+                                    <!-- Pregunta 9 sillas de ruedas -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingNine">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                            ¿Hay entrada para sillas de ruedas?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                            Sí, se accede por el estacionamiento. Por favor, avísenos con antelación para que podamos abrir la entrada. Todos nuestros pacientes puedan acceder a nuestras instalaciones cómodamente.
+                                            </div>
+                                        </div>
+                                    </div> <!-- item -->
+
+                                    <!-- Pregunta 10 estacionamiento -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingTen">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                            ¿Hay estacionamiento?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                <p>Sí, contamos con parqueo gratuito para nuestros pacientes. A su llegada, con gusto le abrimos el portón para que pueda ingresar con seguridad.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- item -->
+                                    <!-- Pregunta 11 ¿Se incluyen los medicamentos? -->
+                                    <div class="accordion-item mb-3 py-2">
+                                        <h2 class="accordion-header" id="headingEleven">
+                                            <button class="accordion-button collapsed events-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                            ¿Se incluyen los medicamentos?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                            Los medicamentos no están incluidos, se le entrega un plan de tratamiento con sus recetas para que pueda adquirir los medicamentos en la farmacia de su preferencia.
+                                        </div>
+                                        </div>
+                                    </div><!-- item -->
+                                </div><!--accordion-->                                        
+                            </div> <!--card body-->
+                        </div> <!--card-->
+                    </div> <!--row-->
+                </div><!--container-->
             </section>
-
+                            
             <!--end of tu visita-->
 
             <span>
