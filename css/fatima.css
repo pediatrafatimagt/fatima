@@ -460,6 +460,8 @@ div > a.phone-cta-btn {
   color: #fff;              /* white text */
   border: none;
   z-index: 5;
+  margin-top: 0.5rem;
+  background-color: #00a5aa;  /* teal background */
 }
 
 /*---------------------------------------
