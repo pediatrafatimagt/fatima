@@ -821,7 +821,7 @@ div > a.phone-cta-btn {
   BACKGROUND IMAGE SECTION        
 -----------------------------------------*/
 .section-bg-image {
-  background-image: url('../images/ad.webp');
+  background-image: url('../images/ad_sm.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
