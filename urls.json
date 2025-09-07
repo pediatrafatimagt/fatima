@@ -13,5 +13,10 @@
     "loc": "https://myguate.net/event-detail.html",
     "changefreq": "weekly",
     "priority": "0.8"
+  },
+  {
+    "loc": "preguntas_y_respuestas.html",
+    "changefreq": "monthly",
+    "priority": "1.0"
   }
 ]
