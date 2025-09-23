@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Visual de Lactancia Materna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-step {
+            position: relative;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            text-align: center;
+            flex-grow: 1;
+        }
+        .flowchart-connector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #118AB2;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 0 1rem;
+        }
+        .position-card {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .position-illustration {
+            background-color: #FFD166;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .position-text {
+            padding: 1.5rem;
+        }
+        .icon-placeholder {
+            font-size: 4rem;
+            color: #073B4C;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-[#118AB2] text-white text-center py-12 px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">Tu Guía Esencial de Lactancia Materna</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto">Un viaje de conexión y nutrición. Aquí encontrarás todo lo que necesitas para empezar con confianza.</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="intro" class="mb-12 text-center">
+             <div class="bg-white rounded-lg shadow-md p-8">
+                <p class="text-2xl font-semibold text-[#073B4C] mb-2">La leche materna es más que alimento</p>
+                <p class="text-lg text-gray-600 mb-4">Es una fuente de anticuerpos, confort y conexión inigualable. Cada gota cuenta para el desarrollo saludable de tu bebé.</p>
+                <div class="bg-[#06D6A0] text-white rounded-lg p-6 max-w-md mx-auto">
+                    <p class="text-4xl font-bold">8-12</p>
+                    <p class="text-xl">Tomas son las que un recién nacido necesita en 24 horas. ¡Escucha sus señales!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="positions" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Encuentra tu Comodidad: Posiciones para Amamantar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="position-card">
+                    <div class="position-illustration">
+                        <span class="icon-placeholder">🤱</span>
+                    </div>
+                    <div class="position-text">
+                        <h3 class="text-xl font-bold text-[#118AB2] mb-2">Posición de Cuna</h3>
+                        <p>La más clásica. Sostén al bebé con el brazo del mismo lado del pecho que ofreces, con su cabeza en tu antebrazo.</p>
+                    </div>
+                </div>
+                <div class="position-card">
+                    <div class="position-illustration">
+                        <span class="icon-placeholder">🧑‍🍼</span>
+                    </div>
+                    <div class="position-text">
+                        <h3 class="text-xl font-bold text-[#118AB2] mb-2">Cuna Cruzada</h3>
+                        <p>Ideal para recién nacidos. Usa el brazo opuesto para sostener al bebé, apoyando su nuca y cuello con tu mano.</p>
+                    </div>
+                </div>
+                <div class="position-card">
+                    <div class="position-illustration">
+                        <span class="icon-placeholder">🏈</span>
+                    </div>
+                    <div class="position-text">
+                        <h3 class="text-xl font-bold text-[#118AB2] mb-2">Posición de Rugby</h3>
+                        <p>Perfecta tras una cesárea o para gemelos. Coloca al bebé a tu costado, bajo tu brazo, como un balón de rugby.</p>
+                    </div>
+                </div>
+                <div class="position-card">
+                    <div class="position-illustration">
+                        <span class="icon-placeholder">🛌</span>
+                    </div>
+                    <div class="position-text">
+                        <h3 class="text-xl font-bold text-[#118AB2] mb-2">Acostada de Lado</h3>
+                        <p>Para tomas nocturnas relajadas. Tú y tu bebé se acuestan de lado, uno frente al otro. ¡Máxima comodidad!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="latch" class="mb-12 bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">El Agarre Perfecto: Guía Paso a Paso</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">Un buen agarre es la clave para una lactancia sin dolor y efectiva. Asegura que tu bebé extraiga suficiente leche y estimula tu producción. Sigue estos pasos para lograrlo.</p>
+                    <div class="flex flex-col space-y-4">
+                        <div class="flex items-center">
+                            <div class="flowchart-step"><span class="font-bold">1. Posición:</span> Barriga con barriga, nariz a la altura del pezón.</div>
+                        </div>
+                         <div class="flowchart-connector self-center">↓</div>
+                        <div class="flex items-center">
+                            <div class="flowchart-step"><span class="font-bold">2. Estímulo:</span> Roza su labio superior con tu pezón para que abra grande la boca.</div>
+                        </div>
+                         <div class="flowchart-connector self-center">↓</div>
+                        <div class="flex items-center">
+                            <div class="flowchart-step"><span class="font-bold">3. Acercamiento:</span> Con la boca bien abierta, acércalo rápido y con firmeza al pecho.</div>
+                        </div>
+                         <div class="flowchart-connector self-center">↓</div>
+                        <div class="flex items-center">
+                           <div class="flowchart-step"><span class="font-bold">4. Verificación:</span> Revisa las señales de un buen agarre. ¡Lo estás haciendo genial!</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-center text-[#118AB2] mb-4">Señales Clave de un Buen Agarre</h3>
+                    <div class="chart-container">
+                        <canvas id="latchChart"></canvas>
+                    </div>
+                    <p class="text-center text-gray-600 mt-4">Observa que su boca cubra gran parte de la areola, no solo el pezón. Si duele, inténtalo de nuevo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="frequency" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Frecuencia y Duración: Sigue el Ritmo de tu Bebé</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-center text-[#118AB2] mb-4">Tomas Diarias (Promedio en 24h)</h3>
+                    <p class="text-center text-gray-600 mb-4">Los recién nacidos comen con más frecuencia. Con el tiempo, las tomas se espacian a medida que su estómago crece.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="frequencyChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-center items-center text-center">
+                     <h3 class="text-xl font-bold text-[#118AB2] mb-4">Duración de la Toma</h3>
+                     <p class="text-gray-600 mb-6">La duración varía mucho. Permite que tu bebé mame de un pecho hasta que lo suelte, luego ofrece el otro. No te fijes en el reloj, sino en las señales de saciedad de tu bebé.</p>
+                    <div class="bg-[#FF6B6B] text-white rounded-full w-48 h-48 flex flex-col justify-center items-center shadow-lg">
+                        <p class="text-4xl font-bold">10-20+</p>
+                        <p class="text-lg">Minutos por pecho</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problems" class="mb-12 bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Retos Comunes y Soluciones</h2>
+             <p class="text-center max-w-3xl mx-auto text-gray-600 mb-8">Casi todas las madres enfrentan algún desafío. ¡No estás sola! Aquí te mostramos la frecuencia de algunos problemas comunes y sus soluciones.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                 <div>
+                    <h3 class="text-xl font-bold text-center text-[#118AB2] mb-4">Percepción de Frecuencia de Problemas</h3>
+                    <div class="chart-container">
+                        <canvas id="problemsChart"></canvas>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-lg text-[#073B4C]">Pezones Agrietados o Dolor</h4>
+                        <p class="text-gray-600"><span class="font-semibold text-[#FF6B6B]">Solución:</span> La causa más común es un mal agarre. Revisa la técnica. Usa lanolina pura y deja los pechos al aire para sanar.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-[#073B4C]">Baja Producción de Leche</h4>
+                        <p class="text-gray-600"><span class="font-semibold text-[#FF6B6B]">Solución:</span> La producción funciona por oferta y demanda. Amamanta con más frecuencia, asegúrate de que el vaciado sea efectivo y mantente hidratada.</p>
+                    </div>
+                     <div>
+                        <h4 class="font-bold text-lg text-[#073B4C]">Congestión Mamaria</h4>
+                        <p class="text-gray-600"><span class="font-semibold text-[#FF6B6B]">Solución:</span> Ocurre cuando los pechos están demasiado llenos. Aplica calor antes de la toma y frío después. Amamanta o extrae leche con frecuencia para aliviar la presión.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="mb-12">
+             <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Consejos de Oro para Mamás Primerizas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-[#FFD166] text-[#073B4C] p-6 rounded-lg shadow-md text-center">
+                    <p class="text-5xl mb-3">💧</p>
+                    <h3 class="font-bold text-lg">Hidrátate Bien</h3>
+                    <p>Ten siempre una botella de agua a mano. Tu cuerpo la necesita para producir leche.</p>
+                </div>
+                 <div class="bg-[#06D6A0] text-[#073B4C] p-6 rounded-lg shadow-md text-center">
+                    <p class="text-5xl mb-3">😴</p>
+                    <h3 class="font-bold text-lg">Descansa</h3>
+                    <p>"Duerme cuando el bebé duerma". El descanso es crucial para tu recuperación y producción de leche.</p>
+                </div>
+                 <div class="bg-[#118AB2] text-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-5xl mb-3">🤝</p>
+                    <h3 class="font-bold text-lg">Busca Apoyo</h3>
+                    <p>Contacta con asesoras de lactancia, grupos de apoyo o habla con otras madres. ¡Tu tribu importa!</p>
+                </div>
+                <div class="bg-[#FF6B6B] text-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-5xl mb-3">💖</p>
+                    <h3 class="font-bold text-lg">Confía en Ti</h3>
+                    <p>Tu cuerpo sabe lo que hace. Confía en tus instintos y en la increíble capacidad de nutrir a tu bebé.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="player">
+
+            <div class="container mx-auto -mt-8 px-4">
+                <div class="bg-white rounded-lg shadow-xl p-4 max-w-2xl mx-auto">
+                    <h2 class="text-xl font-bold text-center text-[#073B4C] mb-2">Escucha esta Guía</h2>
+                    <audio controls src="lactancia_materna.mp3" preload="none" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <footer class="bg-[#073B4C] text-white text-center py-6 px-4">
+        <p>Esta guía tiene fines educativos. Consulta siempre a un profesional de la salud o a una asesora de lactancia certificada para obtener ayuda personalizada.</p>
+        <p class="text-sm opacity-75 mt-2">Creado con cariño para ti y tu bebé.</p>
+    </footer>
+
+    <script>
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            return Array.isArray(label) ? label.join(' ') : label;
+        };
+
+        const chartColors = {
+            red: '#FF6B6B',
+            yellow: '#FFD166',
+            green: '#06D6A0',
+            blue: '#118AB2',
+            darkBlue: '#073B4C'
+        };
+
+        const ctxLatch = document.getElementById('latchChart');
+        if (ctxLatch) {
+            new Chart(ctxLatch, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Boca bien abierta', 'Labios evertidos (hacia afuera)', 'Mentón toca el pecho', 'Más areola visible arriba que abajo'],
+                    datasets: [{
+                        label: 'Señales de Agarre',
+                        data: [25, 25, 25, 25],
+                        backgroundColor: [chartColors.green, chartColors.yellow, chartColors.blue, chartColors.red],
+                        borderColor: '#fff',
+                        borderWidth: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                             labels: {
+                                color: '#4A5568'
+                            }
+                        },
+                        tooltip: {
+                            callbacks: { title: tooltipTitleCallback }
+                        }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+        
+        const ctxFrequency = document.getElementById('frequencyChart');
+        if(ctxFrequency) {
+            new Chart(ctxFrequency, {
+                type: 'bar',
+                data: {
+                    labels: ['Recién Nacido (0-1m)', '2-6 Meses', '6-12 Meses'],
+                    datasets: [{
+                        label: 'Tomas en 24h',
+                        data: [10, 7, 5],
+                        backgroundColor: [chartColors.blue, chartColors.green, chartColors.yellow],
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                     indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: { title: tooltipTitleCallback }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: {
+                                display: false
+                            },
+                             ticks: { color: '#4A5568' }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: { color: '#4A5568', font: { size: 14 } }
+                        }
+                    }
+                }
+            });
+        }
+        
+        const ctxProblems = document.getElementById('problemsChart');
+        if(ctxProblems) {
+             const problemLabels = [
+                'Dolor en pezones',
+                'Preocupación por bajo suministro',
+                'Congestión mamaria',
+                'Mal agarre',
+                'Tomas muy frecuentes'
+             ];
+             const wrappedProblemLabels = problemLabels.map(wrapLabel);
+
+            new Chart(ctxProblems, {
+                type: 'radar',
+                data: {
+                    labels: wrappedProblemLabels,
+                    datasets: [{
+                        label: 'Frecuencia Percibida',
+                        data: [8, 9, 6, 8, 7],
+                        backgroundColor: 'rgba(255, 107, 107, 0.2)',
+                        borderColor: chartColors.red,
+                        pointBackgroundColor: chartColors.red,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: chartColors.red
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                             labels: { color: '#4A5568' }
+                        },
+                        tooltip: {
+                            callbacks: { title: tooltipTitleCallback }
+                        }
+                    },
+                    scales: {
+                        r: {
+                            angleLines: { color: '#CBD5E0' },
+                            grid: { color: '#CBD5E0' },
+                            pointLabels: {
+                                color: '#2D3748',
+                                font: { size: 12 }
+                            },
+                            ticks: {
+                                backdropColor: 'rgba(255, 255, 255, 0.75)',
+                                color: '#4A5568'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
