@@ -487,42 +487,100 @@ div > a.phone-cta-btn {
 /*---------------------------------------
   FREQUENTLY ASKED QUESTIONS (FAQ) PAGE              
 -----------------------------------------*/
-    .card {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-    .card-header {
-      background-color: var(--primary-color);
-      color: var(--white-color);
-      border-radius: 10px 10px 0 0;
-      padding: 1rem 1.25rem;
-    }
-    .card-title {
-      margin-bottom: 0;
-      /*font-size: 1.5rem;*/
-    }
-    .accordion-item {
-      border: 1px solid rgba(0, 0, 0, .125);
-      margin-bottom: 10px;
-      border-radius: 8px !important;
-      overflow: hidden;
-    }
-    .accordion-button {
-      background-color: #fff;
-      color: var(--secondary-color);
-      font-weight: 600;
-    }
-    .accordion-button:hover {
-      color: var(--link-hover-color);
-    }
-    .accordion-button:not(.collapsed) {
-      background-color: var(--primary-color);
-      color: #fff;
-    }
-    .accordion-body {
-      color: #000000;
-    }
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px 10px 0 0;
+  padding: 1rem 1.25rem;
+}
+.card-title {
+  margin-bottom: 0;
+  /*font-size: 1.5rem;*/
+}
+.accordion-item {
+  border: 1px solid rgba(0, 0, 0, .125);
+  margin-bottom: 10px;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+.accordion-button {
+  background-color: #fff;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.accordion-button:hover {
+  color: var(--link-hover-color);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.accordion-body {
+  color: #000000;
+}
+/* --------------------------------------
+    LACTANCIA MATERNA PAGE
+  ---------------------------------------*/
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  max-height: 400px;
+}
+@media (min-width: 768px) {
+  .chart-container {
+      height: 350px;
+  }
+}
+.flowchart-step {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  text-align: center;
+  flex-grow: 1;
+}
+.flowchart-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #118AB2;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.position-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.position-illustration {
+  background-color: #FFD166;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.position-text {
+  padding: 1.5rem;
+}
+.icon-placeholder {
+  font-size: 4rem;
+  color: #073B4C;
+}
 
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
