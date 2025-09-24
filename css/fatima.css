@@ -563,7 +563,7 @@ div > a.phone-cta-btn {
   flex-direction: column;
 }
 .position-illustration {
-  background-color: #FFD166;
+  background-color: var(--primary-color);
   height: 150px;
   display: flex;
   align-items: center;
