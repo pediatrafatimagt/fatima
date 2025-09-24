@@ -492,12 +492,7 @@ div > a.phone-cta-btn {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-.card-header {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  border-radius: 10px 10px 0 0;
-  padding: 1rem 1.25rem;
-}
+
 .card-title {
   margin-bottom: 0;
   /*font-size: 1.5rem;*/
