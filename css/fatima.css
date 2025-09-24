@@ -583,6 +583,16 @@ div > a.phone-cta-btn {
 }
 
 /*---------------------------------------
+  SET CUSTOM BACKGROUND
+  --------------------------------------*/
+.customized-bg {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px 10px 0 0;
+  padding: 1rem 1.25rem;
+}
+
+/*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
 .offcanvas {
