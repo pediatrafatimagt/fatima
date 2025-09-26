@@ -485,6 +485,24 @@ div > a.phone-cta-btn {
 }
 
 /*---------------------------------------
+  ADDED YOUTUBE HOSTED VIDEOS
+  ---------------------------------------*/
+  .video-background {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px; /* keeps your rounded look */
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* disables user interaction */
+}
+
+/*---------------------------------------
   FREQUENTLY ASKED QUESTIONS (FAQ) PAGE              
 -----------------------------------------*/
 .card {
