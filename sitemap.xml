@@ -3,28 +3,28 @@
 
   <url>
     <loc>https://myguate.net/</loc>
-    <lastmod>2025-09-26</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://myguate.net/event-listing.html</loc>
-    <lastmod>2025-09-26</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://myguate.net/event-detail.html</loc>
-    <lastmod>2025-09-26</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://myguate.net/preguntas_y_respuestas.html</loc>
-    <lastmod>2025-09-26</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
