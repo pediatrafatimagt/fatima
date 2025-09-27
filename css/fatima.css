@@ -464,6 +464,13 @@ div > a.phone-cta-btn {
   background-color: #00a5aa;  /* teal background */
 }
 
+/*----------------------------------
+       ADDED LARGE MARGIN
+-----------------------------------------*/
+.large-margin-top {
+    margin-top: 5rem;
+}
+
 /*---------------------------------------
        ADDED WHATSAPP FLOATING BUTTON 
 -----------------------------------------*/
