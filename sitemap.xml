@@ -16,6 +16,20 @@
   </url>
 
   <url>
+    <loc>https://myguate.net/page/tecnica_lactancia_materna.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://myguate.net/page/cydInfantil.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://myguate.net/event-detail.html</loc>
     <lastmod>2025-09-28</lastmod>
     <changefreq>weekly</changefreq>
