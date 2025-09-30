@@ -857,7 +857,7 @@ div > a.phone-cta-btn {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/Banner.jpeg');
+  background-image: url('../images/Banner.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1385,7 +1385,7 @@ div > a.phone-cta-btn {
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   .hero-section {
-    background-image: url('../images/Banner.jpeg');
+    background-image: url('../images/Banner.webp');
   }
   .section-bg-image {
   background-image: url('../images/ad_md.webp');
@@ -1485,7 +1485,7 @@ div > a.phone-cta-btn {
 
 @media screen and (max-width: 480px) {
   .hero-section {
-    background-image: url('../images/Banner.jpeg');
+    background-image: url('../images/Banner.webp');
   }
   .section-bg-image {
   background-image: url('../images/ad_sm.webp');
@@ -1514,7 +1514,7 @@ div > a.phone-cta-btn {
 
 @media screen and (max-width: 360px) {
   .hero-section {
-    background-image: url('../images/Banner.jpeg');
+    background-image: url('../images/Banner.webp');
   }
   .custom-btn {
     font-size: 12px;
