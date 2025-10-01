@@ -30,7 +30,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   --p-color:                      #717275;
   --link-hover-color:             #F2CC8F;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family:             'fatima', sans-serif;
 
   --h1-font-size:                 42px;
   --h2-font-size:                 36px;
@@ -433,19 +433,19 @@ div > a.btn:hover {
   font-size: 10px;
   line-height: .7;
   text-transform: uppercase;
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'fatima', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
   .clinica_ped {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'fatima', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .fatima_brand {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'fatima', sans-serif;
   font-weight: 700;
 }
 
@@ -685,7 +685,7 @@ div > a.phone-cta-btn {
   margin-left: 10px;
   position: relative;
   bottom: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'fatima', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -695,7 +695,7 @@ div > a.phone-cta-btn {
   font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'fatima', sans-serif;
   font-weight: 900;
 }
 
