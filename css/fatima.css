@@ -471,6 +471,7 @@ div > a.btn:hover {
   position: sticky;
   top: 0;
   z-index: 1020; /* make sure it’s above other content */
+  background-color: var(--secondary-color);
 }
 
 
