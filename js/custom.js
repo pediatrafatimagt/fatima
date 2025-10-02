@@ -35,30 +35,31 @@
 
 // ADD A CC BUTTON FOR VIDEOS WITH TRACK
 
-  // Apply to all <track> tags
-  document.querySelectorAll("video track").forEach((trackEl) => {
-    const video = trackEl.parentElement;
-    const track = video.textTracks[0];
-    if (!track) return;
-    track.mode = "hidden"; // start hidden
 
-    // Create CC button
-    const button = document.createElement("button");
-    button.textContent = "CC";
-    button.className = "cc-button";
+  document.querySelectorAll("video").forEach(video => {
+    video.addEventListener("loadedmetadata", () => {
+      const track = video.textTracks[0];
+      if (!track) return;
+      track.mode = "hidden"; // hide captions initially
 
-    // Ensure parent container can position overlay
-    video.parentElement.style.position = "relative";
-    video.parentElement.appendChild(button);
+      // Create CC button
+      const button = document.createElement("button");
+      button.textContent = "CC";
+      button.className = "cc-button";
 
-    // Toggle captions
-    button.addEventListener("click", () => {
-      if (track.mode === "showing") {
-        track.mode = "hidden";
-        button.classList.remove("active");
-      } else {
-        track.mode = "showing";
-        button.classList.add("active");
-      }
+      // Position overlay
+      video.parentElement.style.position = "relative";
+      video.parentElement.appendChild(button);
+
+      // Toggle captions
+      button.addEventListener("click", () => {
+        if (track.mode === "showing") {
+          track.mode = "hidden";
+          button.classList.remove("active");
+        } else {
+          track.mode = "showing";
+          button.classList.add("active");
+        }
+      });
     });
   });
