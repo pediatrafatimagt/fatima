@@ -510,36 +510,6 @@ div > a.phone-cta-btn {
 }
 
 /*---------------------------------------
-  cc BUTTON OFR .VTT TRACK              
------------------------------------------*/
-
-.cc-button {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  background: rgba(0,0,0,0.7);
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-  border: none;
-  border-radius: 4px;
-  padding: 2px 6px;
-  cursor: pointer;
-  z-index: 10;
-  transition: background 0.2s;
-}
-
-.cc-button:hover {
-  background: rgba(0,0,0,0.9);
-}
-
-.cc-button.active {
-  background: #e62117; /* YouTube red when active */
-}
-
-
-/*---------------------------------------
   FREQUENTLY ASKED QUESTIONS (FAQ) PAGE              
 -----------------------------------------*/
 
