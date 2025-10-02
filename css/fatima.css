@@ -538,22 +538,6 @@ div > a.phone-cta-btn {
   background: #e62117; /* YouTube red when active */
 }
 
-/* Hide native captions button in Chromium browsers */
-video::-webkit-media-controls-toggle-closed-captions-button {
-  display: none !important;
-}
-
-/* Firefox CC button is part of the controls bar */
-video::-moz-media-controls-enclosure {
-  /* Unfortunately, Firefox doesn’t give us a direct CC toggle handle */
-}
-
-/* Hide native CC buttons */
-video::-webkit-media-controls-toggle-closed-captions-button,
-video::-webkit-media-controls-closed-captions-button {
-  display: none !important;
-}
-
 
 /*---------------------------------------
   FREQUENTLY ASKED QUESTIONS (FAQ) PAGE              
