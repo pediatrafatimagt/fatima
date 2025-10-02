@@ -1,37 +1,46 @@
-//jquery-click-scroll
-//by syamsul'isul' Arifin
+// click-scroll.js
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-item .nav-link");
+  const sections = [];
 
-var sectionArray = [1, 2, 3, 4, 5];
+  navLinks.forEach((link, index) => {
+    const value = link.dataset.scroll; // assumes data-scroll="1" etc.
+    const section = document.getElementById("section_" + value);
+    if (section) {
+      sections.push({ section, index });
 
-$.each(sectionArray, function(index, value){
-          
-     $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 94;
-         var docScroll = $(document).scrollTop();
-         var docScroll1 = docScroll + 1;
-         
-        
-         if ( docScroll1 >= offsetSection ){
-             $('.navbar-nav .nav-item .nav-link').removeClass('active');
-             $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');  
-             $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
-             $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
-         }
-         
-     });
-    
-    $('.click-scroll').eq(index).click(function(e){
-        var offsetClick = $('#' + 'section_' + value).offset().top - 94;
+      // Click scroll behavior
+      link.addEventListener("click", e => {
         e.preventDefault();
-        $('html, body').animate({
-            'scrollTop':offsetClick
-        }, 300)
-    });
-    
-});
+        const offsetClick = section.offsetTop - 94;
+        window.scrollTo({ top: offsetClick, behavior: "smooth" });
+        setActiveLink(index);
+      });
+    }
+  });
 
-$(document).ready(function(){
-    $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');    
-    $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
-    $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
+  // Update active link on scroll
+  window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY + 95;
+    for (let { section, index } of sections) {
+      if (
+        scrollPos >= section.offsetTop &&
+        scrollPos < section.offsetTop + section.offsetHeight
+      ) {
+        setActiveLink(index);
+      }
+    }
+  });
+
+  function setActiveLink(index) {
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      link.classList.add("inactive");
+    });
+    navLinks[index].classList.add("active");
+    navLinks[index].classList.remove("inactive");
+  }
+
+  // Initialize first link as active
+  if (navLinks.length > 0) setActiveLink(0);
 });
