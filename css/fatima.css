@@ -449,31 +449,6 @@ div > a.btn:hover {
   font-weight: 700;
 }
 
-/*----------------------------------
-       HEADLINE CSS BY CHAT GPT
------------------------------------------*/
-
-/* animated headline letters */
-.cd-headline.letters b { display:inline-block; line-height:1; vertical-align:middle; }
-.cd-headline .letter {
-  display:inline-block;
-  transform: translateY(30%);
-  opacity: 0;
-  transition: transform 0.35s ease, opacity 0.35s ease;
-  will-change: transform, opacity;
-}
-.cd-headline .letter.in {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1020; /* make sure it’s above other content */
-  background-color: var(--secondary-color);
-}
-
 
 /*----------------------------------
        ADDED PHONE BUTTON 
