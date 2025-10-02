@@ -1,37 +1,65 @@
-//jquery-click-scroll
-//by syamsul'isul' Arifin
+// click-scroll.js (vanilla, defensive)
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = Array.from(document.querySelectorAll(".navbar-nav .nav-item .nav-link"));
+  if (!navLinks.length) return;
 
-var sectionArray = [1, 2, 3, 4, 5];
+  // Build array of {link, targetEl}
+  const items = navLinks.map(link => {
+    // Prefer data-scroll attribute, fallback to href (#id)
+    const ds = link.dataset && link.dataset.scroll;
+    const href = link.getAttribute("href") || "";
+    let targetEl = null;
 
-$.each(sectionArray, function(index, value){
-          
-     $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 94;
-         var docScroll = $(document).scrollTop();
-         var docScroll1 = docScroll + 1;
-         
-        
-         if ( docScroll1 >= offsetSection ){
-             $('.navbar-nav .nav-item .nav-link').removeClass('active');
-             $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');  
-             $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
-             $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
-         }
-         
-     });
-    
-    $('.click-scroll').eq(index).click(function(e){
-        var offsetClick = $('#' + 'section_' + value).offset().top - 94;
-        e.preventDefault();
-        $('html, body').animate({
-            'scrollTop':offsetClick
-        }, 300)
+    if (ds) {
+      targetEl = document.getElementById("section_" + ds);
+    } else if (href.startsWith("#")) {
+      targetEl = document.querySelector(href);
+    }
+    return { link, targetEl };
+  });
+
+  function setActive(index) {
+    navLinks.forEach((lnk, i) => {
+      lnk.classList.toggle("active", i === index);
+      lnk.classList.toggle("inactive", i !== index);
     });
-    
-});
+  }
 
-$(document).ready(function(){
-    $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');    
-    $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
-    $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
+  // Click handlers
+  items.forEach(({ link, targetEl }, index) => {
+    if (!targetEl) return;
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const headerH = document.querySelector(".navbar")?.offsetHeight || 0;
+      const top = targetEl.getBoundingClientRect().top + window.scrollY - headerH - 6; // small offset
+      window.scrollTo({ top, behavior: "smooth" });
+      setActive(index);
+    });
+  });
+
+  // Throttled scroll handler using requestAnimationFrame
+  let ticking = false;
+  function updateOnScroll() {
+    const scrollPos = window.scrollY + (document.querySelector(".navbar")?.offsetHeight || 0) + 10;
+    for (let i = 0; i < items.length; i++) {
+      const el = items[i].targetEl;
+      if (!el) continue;
+      const top = el.offsetTop;
+      const bottom = top + el.offsetHeight;
+      if (scrollPos >= top && scrollPos < bottom) {
+        setActive(i);
+        break;
+      }
+    }
+    ticking = false;
+  }
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateOnScroll);
+    }
+  });
+
+  // initialize
+  setActive(0);
 });
