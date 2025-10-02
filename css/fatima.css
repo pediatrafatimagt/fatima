@@ -512,6 +512,7 @@ div > a.phone-cta-btn {
 /*---------------------------------------
   cc BUTTON OFR .VTT TRACK              
 -----------------------------------------*/
+
 .cc-button {
   position: absolute;
   bottom: 12px;
@@ -528,16 +529,36 @@ div > a.phone-cta-btn {
   z-index: 10;
   transition: background 0.2s;
 }
+
 .cc-button:hover {
   background: rgba(0,0,0,0.9);
 }
+
 .cc-button.active {
   background: #e62117; /* YouTube red when active */
 }
 
+/* Hide native captions button in Chromium browsers */
+video::-webkit-media-controls-toggle-closed-captions-button {
+  display: none !important;
+}
+
+/* Firefox CC button is part of the controls bar */
+video::-moz-media-controls-enclosure {
+  /* Unfortunately, Firefox doesn’t give us a direct CC toggle handle */
+}
+
+/* Hide native CC buttons */
+video::-webkit-media-controls-toggle-closed-captions-button,
+video::-webkit-media-controls-closed-captions-button {
+  display: none !important;
+}
+
+
 /*---------------------------------------
   FREQUENTLY ASKED QUESTIONS (FAQ) PAGE              
 -----------------------------------------*/
+
 .card {
   border: none;
   border-radius: 10px;
@@ -631,6 +652,7 @@ div > a.phone-cta-btn {
 /*---------------------------------------
   SET CUSTOM BACKGROUND
   --------------------------------------*/
+
 .customized-bg {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -641,6 +663,7 @@ div > a.phone-cta-btn {
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
+
 .offcanvas {
   background-color: var(--primary-color);
   padding: 30px;
