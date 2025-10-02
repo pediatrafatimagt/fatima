@@ -32,32 +32,3 @@
 
 // UPDATE THE YEAR
   document.getElementById('current-year').textContent = new Date().getFullYear();
-    // custom.js
-  document.addEventListener("DOMContentLoaded", () => {
-    // Collapse navbar after clicking a link
-    document.querySelectorAll(".navbar-collapse a").forEach(link => {
-      link.addEventListener("click", () => {
-        const collapseEl = document.querySelector(".navbar-collapse");
-        const bsCollapse = bootstrap.Collapse.getInstance(collapseEl);
-        if (bsCollapse) {
-          bsCollapse.hide();
-        }
-      });
-    });
-
-    // Smooth scroll for .smoothscroll links
-    document.querySelectorAll(".smoothscroll").forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const targetId = link.getAttribute("href");
-        if (targetId && targetId.startsWith("#")) {
-          const targetEl = document.querySelector(targetId);
-          if (targetEl) {
-            const headerHeight = document.querySelector(".navbar")?.offsetHeight || 0;
-            const offsetTop = targetEl.offsetTop - headerHeight;
-            window.scrollTo({ top: offsetTop, behavior: "smooth" });
-          }
-        }
-      });
-    });
-  });
