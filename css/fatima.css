@@ -720,7 +720,9 @@ div > a.phone-cta-btn {
   border-radius: 10px 10px 0 0;
   padding: 1rem 1.25rem;
 }
-
+iframe {
+    border: none; /* This replaces frameborder="0" */
+}
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
