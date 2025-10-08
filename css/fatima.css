@@ -20,7 +20,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
+ /* --white-color:                  #ffffff;
   --primary-color:                #00a5aa;
   --secondary-color:              #00a5aa;
   --section-bg-color:             #F4F1DE;
@@ -28,7 +28,16 @@ https://templatemo.com/tm-587-tiya-golf-club
   --custom-btn-bg-hover-color:    #E07A5F;
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --link-hover-color:             #F2CC8F;
+  --link-hover-color:             #F2CC8F;*/
+  --white-color:                  #ffffff;
+  --primary-color:                #00a5aa;     /* Keep brand teal */
+  --secondary-color:              #007a7e;     /* Darker teal for contrast + hierarchy */
+  --section-bg-color:             #f4f1de;     /* Keep warm neutral */
+  --custom-btn-bg-color:          #007f84;     /* Contrast-safe teal (4.6:1 with white text) */
+  --custom-btn-bg-hover-color:    #e07a5f;     /* Warm hover contrast */
+  --dark-color:                   #252525;     /* Softer black for smoother UI */
+  --p-color:                      #55585c;     /* Slightly darker gray (better contrast on light bg) */
+  --link-hover-color:             #f2cc8f;     /* Keep, but ensure used on dark text/teal bg only */
 
   --body-font-family:             'fatima', sans-serif;
 
