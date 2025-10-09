@@ -1496,12 +1496,7 @@ iframe {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
-  .hero-section {
-    background-image: url('/images/Banner.webp');
-  }
-  .section-bg-image {
-  background-image: url('/images/ad_md.webp');
-  }
+
   h1 {
     font-size: 36px;
   }
@@ -1596,12 +1591,7 @@ iframe {
 }
 
 @media screen and (max-width: 480px) {
-  .hero-section {
-    background-image: url('/images/Banner.webp');
-  }
-  .section-bg-image {
-  background-image: url('/images/ad_sm.webp');
-  }
+
   .navbar-brand {
     font-size: var(--p-font-size);
   }
@@ -1625,16 +1615,12 @@ iframe {
 }
 
 @media screen and (max-width: 360px) {
-  .hero-section {
-    background-image: url('/images/Banner.webp');
-  }
+
   .custom-btn {
     font-size: 12px;
     padding: 4px 12px;
   }
-  .section-bg-image {
-  background-image: url('/images/ad_sm.webp');
-  }
+
 }
 
 
