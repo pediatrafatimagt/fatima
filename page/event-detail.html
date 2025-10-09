@@ -2,7 +2,19 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Permissions-Policy (modern replacement for Feature-Policy) -->
+        <meta http-equiv="Permissions-Policy" content="autoplay=(self), fullscreen=(), picture-in-picture=()">
+        <!-- Content-Security-Policy (simplified for Google/YouTube embeds) -->
+        <meta http-equiv="Content-Security-Policy"
+            content="
+                default-src 'self';
+                frame-src 'self' https://www.youtube.com https://www.google.com;
+                img-src 'self' data: https://www.google.com;
+                script-src 'self' https://www.youtube.com https://www.google.com;
+                style-src 'self' 'unsafe-inline';
+                connect-src 'self';
+            ">
         <meta name="keywords" content="pediatra, pediatría, Esquipulas, Chiquimula, Guatemala, salud, enfermedad, vacunas, crecimiento, niño, niña">
         <meta name="description" content="Nuestra misión Cuidar con amor y responsabilidad la salud de niñas, niños y adolescentes, para que crezcan sanos, fuertes y felices, acompañando siempre a sus familias con orientación clara y cercana.">
         <meta name="author" content="MyGuate">
