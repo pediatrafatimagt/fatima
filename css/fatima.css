@@ -546,13 +546,13 @@ div > a.btn:hover {
 
   .clinica_ped {
   font-family: 'fatima', sans-serif;
-  font-weight: 900;
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
 }
 
 .fatima_brand {
   font-family: 'fatima', sans-serif;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 
