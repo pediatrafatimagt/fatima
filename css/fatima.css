@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark-color);
   letter-spacing: -0.5px; /* reduced for better readability on large text */
   line-height: 1.25; /* improved vertical rhythm */
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
