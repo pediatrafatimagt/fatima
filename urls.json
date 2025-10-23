@@ -25,6 +25,11 @@
     "priority": "0.8"
   },
   {
+    "loc": "https://myguate.net/page/PrevencióndeEnfermedades.html",
+    "changefreq": "weekly",
+    "priority": "0.8"
+  },
+  {
     "loc": "https://myguate.net/page/preguntas_y_respuestas.html",
     "changefreq": "monthly",
     "priority": "1.0"
