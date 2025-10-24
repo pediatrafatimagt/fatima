@@ -525,6 +525,10 @@ div.contact-info-body {
   font-size: small;
 }
 
+div.contact-info-footer a {
+  font-size: small;
+}
+
 /*---------------------------------------
   202508 CUSTOMIZATION               
 -----------------------------------------*/
