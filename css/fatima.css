@@ -523,10 +523,12 @@ strong {
 div.contact-info-body {
   color: #fff;
   font-size: small;
+  line-height: 1.2;
 }
 
 div.contact-info-footer a {
   font-size: small;
+  line-height: 1.2;
 }
 
 /*---------------------------------------
