@@ -549,6 +549,19 @@ div.contact-info-footer a {
     /* The contact-info-item might need a translucent background if text is hard to read */
 }
 
+.contact-info-item {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-medium);
+  /* REMOVE position: absolute; */
+  /* REMOVE overflow: hidden; */
+  /* REMOVE top: 50%; */
+  /* REMOVE left: 50%; */
+  /* REMOVE transform: translate(-50%, -50%); */
+  text-align: center;
+  /* Optional: Ensure it has max width */
+  max-width: 90%; 
+}
+
 /*---------------------------------------
   202508 CUSTOMIZATION               
 -----------------------------------------*/
@@ -1364,8 +1377,8 @@ iframe {
   position: relative;
 }
 
-.contact-info-item {
-  background: var(--secondary-color);
+/* .contact-info-item {
+ background: var(--secondary-color);
   border-radius: var(--border-radius-medium);
   position: absolute;
   overflow: hidden;
@@ -1373,7 +1386,7 @@ iframe {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
+}*/
 
 .contact-info-body {
   padding: 20px 30px;
