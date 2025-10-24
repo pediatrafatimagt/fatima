@@ -518,7 +518,7 @@ strong {
 }
 
 /*---------------------------------------
-  2010 CUSTOMIZATION FOOTER CONTACT INFO
+  202510 CUSTOMIZATION FOOTER CONTACT INFO
 -----------------------------------------*/
 div.contact-info-body {
   color: #fff;
@@ -529,6 +529,24 @@ div.contact-info-body {
 div.contact-info-footer a {
   font-size: small;
   line-height: 1.2;
+}
+
+.contact-info {
+    /* Set the image as a background */
+    background-image: url('/images/WorldMap.webp');
+    
+    /* Center the image within the container */
+    background-position: center; 
+    
+    /* Make sure the image covers the container or is contained */
+    /* Use 'cover' to ensure it fills the space, cropping if necessary */
+    background-size: cover; 
+    
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
+    
+    /* Optional: Ensure the background shows through */
+    /* The contact-info-item might need a translucent background if text is hard to read */
 }
 
 /*---------------------------------------
