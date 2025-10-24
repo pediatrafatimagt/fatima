@@ -531,7 +531,7 @@ div.contact-info-footer a {
   line-height: 1.2;
 }
 
-.contact-info {
+.mg-bg-image {
     /* Set the image as a background */
     background-image: url('/images/WorldMap.webp');
     
